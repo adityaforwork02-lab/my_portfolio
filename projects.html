@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Aditya</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="projects.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Aditya<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="about.html">About</a>
+      <a href="skills.html">Skills</a><a class="active" href="projects.html">Projects</a><a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="page">
+    <p class="eyebrow">THINGS I'VE BUILT</p>
+    <h1>My Projects</h1>
+    <p class="intro">I'm at the beginning of my development journey. I'll keep adding projects as I learn and build more.</p>
+
+    <section class="content-card">
+      <h2>My Portfolio Website</h2>
+      <p>A multi-page portfolio website created with HTML, CSS and JavaScript. It introduces me, describes the skills I'm learning, and provides a way to get in touch.</p>
+      <span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">JavaScript</span>
+    </section>
+
+    <section class="content-card upload-card">
+      <h2>Add a New Project</h2>
+      <p>Enter a project title, add a short description, and choose one or more files to attach. You can attach source code, documents, images or project archives.</p>
+      <form id="project-form">
+        <label for="project-name">Project name</label>
+        <input id="project-name" name="project-name" type="text" placeholder="e.g. Calculator App" required>
+        <label for="project-description">Project description</label>
+        <textarea id="project-description" name="project-description" rows="3" placeholder="What does your project do?"></textarea>
+        <label for="project-files">Attach project files</label>
+        <input id="project-files" name="project-files" type="file" multiple required>
+        <p class="small-note">You can select multiple files at once. Files are shown in this browser session; this demo does not upload them to an online server.</p>
+        <button class="button" type="submit">Add Project</button>
+        <p id="form-message" class="small-note" role="status"></p>
+      </form>
+    </section>
+
+    <section class="project-area">
+      <h2>Added Projects</h2>
+      <div id="project-list" class="project-list">
+        <p id="empty-message" class="small-note">Your newly attached projects will appear here.</p>
+      </div>
+    </section>
+  </main>
+  <footer>Made by Aditya Pratap Singh and Aastha Gupta for our 1st-semester microproject.</footer>
+</body>
+</html>
